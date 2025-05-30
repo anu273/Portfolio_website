@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Anamika Choudhary </title>
+    <link rel="icon" type="image/png" href="./images/pf.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    
+</head>
+
+<body class="overflow-x-hidden bg-center bg-cover text-black dark:text-white transition-colors duration-500">
+    <!-- Light Theme Background -->
+    <div class="fixed inset-0 bg-light-bg bg-cover bg-center bg-fixed z-[-1] dark:hidden"></div>
+
+    <!-- Dark Theme Background -->
+    <div class="fixed inset-0 bg-dark-bg bg-cover bg-center bg-fixed hidden dark:block z-[-1]"></div>
+
+    
+    <!--------Nav Bar -------->
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[5%] py-2 flex items-center justify-between z-50 bg-left bg-cover"
+     style="background-color: rgba(255, 255, 255, 0.5); backdrop-filter: blur(3px)">
+
+        <div class="container mx-auto px-6 flex justify-between items-center w-full">
+
+      <!-- Logo -->
+        <div class="flex items-center gap-2">
+            <img src="./images/Logo.png" alt="Logo" class="h-8 w-auto" />
+        </div>
+
+      <!-- Center: Navigation Links -->
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 px-12 py-3">
+            <li><a href="index.html" class="hover:text-fuchsia-600 font-md">Home</a></li>
+            <li><a href="About.html" class="hover:text-fuchsia-600 font-md">About</a></li>
+            <li><a href="#projects" class="hover:text-fuchsia-600 font-md font-bold">Projects</a></li>
+            <li><a href="#contact" class="hover:text-fuchsia-600 font-md">Contact</a></li>
+        </ul>
+
+      <!-- Search and Dark mode -->
+        <div class="flex items-center gap-3 sm:gap-4">
+        <!-- Dark mode icon -->
+            <button onclick="toggleTheme()">
+                <img src="./images/dark.png" alt="Dark" class="w-6 block dark:hidden" />
+                <img src="./images/light.png" alt="" class="w-8 hidden dark:block" />
+            </button>
+
+            <!-- Search box -->
+            <div class="relative w-28 sm:w-40">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <img src="./images/search.jpg" alt="Search" class="w-4 h-4" />
+                </div>
+
+                <input
+                type="text"
+                placeholder="Search..."
+                class="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+                />
+            </div>
+
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="./images/menu.jpg" alt="" class="w-6">
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen transition duration-500 bg-right bg-cover bg-side-bg dark:bg-dark-bg">
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="./images/cancel.jpg" alt="" class="w-10 cursor-pointer dark:hidden">
+                <img src="./images/close-white.png" alt="" class="w-4 cursor-pointer hidden dark:block">
+
+            </div>
+            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About me</a></li>
+            <li><a href="#work" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+        </ul>
+
+    </nav>
+<script src="./script.js"></script>
+</body>
+</html>
