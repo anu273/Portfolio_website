@@ -1,1 +1,12 @@
+# Ignore Jupyter Notebooks in language statistics
 *.ipynb linguist-detectable=false
+
+# Mark minified JavaScript files as generated (optional)
+*.min.js linguist-generated
+
+# Mark build or vendor directories as vendored (if added later)
+vendor/** linguist-vendored
+build/** linguist-generated
+
+# Mark markdown files as documentation (optional)
+*.md linguist-documentation
