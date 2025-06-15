@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="./images/pf.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
-    
+
 </head>
 
 <body class="overflow-x-hidden bg-center bg-cover text-black dark:text-white transition-colors duration-500">
@@ -31,10 +31,10 @@
 
       <!-- Center: Navigation Links -->
         <ul class="hidden md:flex items-center gap-6 lg:gap-8 px-12 py-3">
-            <li><a href="#top" class="hover:text-fuchsia-600 font-md">Home</a></li>
-            <li><a href="#about" class="hover:text-fuchsia-600 font-md">About</a></li>
-            <li><a href="#work" class="hover:text-fuchsia-600 font-md">Projects</a></li>
-            <li><a href="#contact" class="hover:text-fuchsia-600 font-md">Contact</a></li>
+            <li><a href="#top" class="hover:text-fuchsia-600 font-md font-bold">Home</a></li>
+            <li><a href="./About.html" class="hover:text-fuchsia-600 font-md">About</a></li>
+            <li><a href="./Projects.html" class="hover:text-fuchsia-600 font-md">Projects</a></li>
+            <li><a href="./Contact.html" class="hover:text-fuchsia-600 font-md">Contact</a></li>
         </ul>
 
       <!-- Search and Dark mode -->
@@ -71,156 +71,160 @@
 
             </div>
             <li><a href="#top" onclick="closeMenu()">Home</a></li>
-            <li><a href="#about" onclick="closeMenu()">About me</a></li>
-            <li><a href="#work" onclick="closeMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+            <li><a href="./About.html" onclick="closeMenu()">About me</a></li>
+            <li><a href="./Projects.html" onclick="closeMenu()">Projects</a></li>
+            <li><a href="./Contact.html" onclick="closeMenu()">Contact me</a></li>
         </ul>
 
     </nav>
 
-<!------- Header Section------->
-<div class="w-11/12 max-w-3xl mx-auto h-screen flex flex-col items-center justify-center gap-4 text-center">
-    <img src="./images/profile.jpg" alt="Anamika's profile" class="w-60 h-60 rounded-full object-cover border-4 border-grey-700 shadow-md" />
-    <h3 class="flex items-center justify-center gap-1 text-xl md:text-2xl mb-2">
-        Hi! I'm Anamika Choudhary <img src="./images/hand.png" alt="Waving hand" class="w-10 initial-block"/>
-    </h3>
-    <p class="max-w-2xl mx-auto">A graduate from the Indian Institute of Technology (IIT) Jodhpur, with a degree in Metallurgical and Materials Engineering.</p>
+    <!------- Header Section------->
+    <div class="w-11/12 max-w-3xl mx-auto h-screen flex flex-col items-center justify-center gap-4 text-center">
+        <img src="./images/profile.jpg" alt="Anamika's profile" class="w-60 h-60 rounded-full object-cover border-4 border-gray-700 shadow-md" />
+        <h3 class="flex items-center justify-center gap-1 text-xl md:text-2xl mb-2">
+            Hi! I'm Anamika Choudhary <img src="./images/hand.png" alt="Waving hand" class="w-10 initial-block"/>
+        </h3>
+        <p class="max-w-2xl mx-auto">A graduate from the Indian Institute of Technology (IIT) Jodhpur, with a degree in Metallurgical and Materials Engineering.</p>
 
-    <div class="flex flex-col sm:flex-row items-center mt-4">
-        <a href="./Resume/Anamika_B.Tech_Resume.pdf" download
-        class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-gray-200 font-serif dark:text-black">My Resume <img src="./images/download.jpg" alt="" class="w-6"></a>
-    </div>
-</div>
-
-<!----------- About Me --------->
-<div class="px-[1%] py-10 bg-cover scroll-mt-20" id="about">
-    <h2 class="text-center text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-serif">About me</h2>
-    <div class="max-w-5xl mx-auto mt-7">
-        <p class="text-sm md:text-lg lg:text-xl leading-relaxed text-center font-sans">I'm Anamika Choudhary, a final-year B.Tech student in Materials Science and Metallurgical Engineering at IIT Jodhpur, blending core engineering expertise with a deep interest in data science and financial analytics. I’m passionate about applying technology to solve real-world problems—particularly at the intersection of AI, economics, and finance. Whether it's through machine learning, data analytics, or experimental innovation, I aim to keep learning, building, and creating meaningful impact.<a href="./About.html" class="text-gray-500 italic text-base"> more...</a></p>
+        <div class="flex flex-col sm:flex-row items-center mt-4">
+            <a href="./Resume/Anamika_B.Tech_Resume.pdf" download target="_blank"
+            class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-gray-200 font-serif dark:text-black">My Resume <img src="./images/download.jpg" alt="" class="w-6"></a>
+        </div>
     </div>
 
+    <!----------- About Me --------->
+    <div class="px-[1%] py-10 bg-cover scroll-mt-14" id="about">
+        <h2 class="text-center text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-serif">About me</h2>
+        <div class="max-w-5xl mx-auto mt-7">
+            <p class="text-sm md:text-lg lg:text-xl leading-relaxed text-center font-sans">I'm Anamika Choudhary, a final-year B.Tech student in Materials Science and Metallurgical Engineering at IIT Jodhpur, blending core engineering expertise with a deep interest in data science and financial analytics. I’m passionate about applying technology to solve real-world problems—particularly at the intersection of AI, economics, and finance. Whether it's through machine learning, data analytics, or experimental innovation, I aim to keep learning, building, and creating meaningful impact.<a href="./About.html" class="text-gray-500 italic text-base"> more...</a></p>
+        </div>
 
-    <!-------- Skills ---------->
-    <div class="max-w-5xl mx-auto mt-16">
-        <h4 class="text-center text-2xl">Skills</h4>
-        <hr class="border-t-2 border-gray-400 my-2 w-15/16 mx-auto" />
 
-        <ul class="grid grid-cols-3 gap-2 sm:gap-6 max-w-5xl">
-            <li class="flex flex-col border-[0.5px] border-gray-400 bg-white dark:text-black rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
-                <img src="./images/languages1.png" alt="" class="w-8 mt-2">
-                <h3 class="my-2 font-semibold text-gray-700">Languages</h3>
-                <p>Python, C/C++, HTML, SQL</p>
-            </li>
-            <li class="flex flex-col border-[0.5px] border-gray-400 bg-white dark:text-black rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
-                <img src="./images/tech.png" alt="" class="w-8 mt-2">
-                <h3 class="my-2 font-semibold text-gray-700">Technical Skills</h3>
-                <p>Machine Learning, DSA, NLP, Excel, Statistics</p>
-            </li>
-            <li class="flex flex-col border-[0.5px] bg-white dark:text-black border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
-                <img src="./images/tools.jpg" alt="" class="w-8 mt-2">
-                <h3 class="my-2 font-semibold text-gray-700">Tools & Systems</h3>
-                <p>Pandas, NumPy, OpenCV, matplotlib, VS code, PowerBI</p>
-            </li>
-        </ul>
-        <hr class="border-t-2 border-gray-400 my-2 w-15/16 mx-auto" />
+        <!-------- Skills ---------->
+        <div class="max-w-5xl mx-auto mt-16">
+            <h4 class="text-center text-2xl">Skills</h4>
+            <hr class="border-t-2 border-gray-400 my-2 w-15/16 mx-auto" />
+
+            <ul class="grid grid-cols-3 gap-2 sm:gap-6 max-w-5xl">
+                <li class="flex flex-col border-[0.5px] border-gray-400 bg-white dark:text-black rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                    <img src="./images/languages1.png" alt="" class="w-8 mt-2">
+                    <h3 class="my-2 font-semibold text-gray-700">Languages</h3>
+                    <p>Python, C/C++, HTML, SQL</p>
+                </li>
+                <li class="flex flex-col border-[0.5px] border-gray-400 bg-white dark:text-black rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                    <img src="./images/tech.png" alt="" class="w-8 mt-2">
+                    <h3 class="my-2 font-semibold text-gray-700">Technical Skills</h3>
+                    <p>Machine Learning, DSA, NLP, Excel, Statistics</p>
+                </li>
+                <li class="flex flex-col border-[0.5px] bg-white dark:text-black border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                    <img src="./images/tools.jpg" alt="" class="w-8 mt-2">
+                    <h3 class="my-2 font-semibold text-gray-700">Tools & Systems</h3>
+                    <p>Pandas, NumPy, OpenCV, matplotlib, VS code, PowerBI</p>
+                </li>
+            </ul>
+            <hr class="border-t-2 border-gray-400 my-2 w-15/16 mx-auto" />
+        </div>
     </div>
-</div>
 
-<!--------Projects -------->
-<div class="px-[12%] py-12 bg-cover scroll-mt-20" id="work">
-    <h2 class="text-center text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-serif">Projects</h2>
-    <hr class="border-t-2 border-gray-400 mt-8 w-15/16 mx-auto"/>
+    <!--------Projects -------->
+    <div class="px-[12%] py-12 bg-cover scroll-mt-10" id="work">
+        <h2 class="text-center text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-serif">Projects</h2>
+        <hr class="border-t-2 border-gray-400 mt-8 w-15/16 mx-auto"/>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 mt-2 gap-12">
-        <div class="w-full h-64 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" style="background-image: url('./images/p1.webp')">
-            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 transform -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 gap-4"
-            style="background-color: rgba(255, 255, 255, 0.5); backdrop-filter: blur(3px)">
-                <div>
-                    <h2 class="font-semibold dark:text-black">ChatBot</h2>
-                    <p class="text-xs md:text-sm text-gray-700">Designed an NLP pipeline to extract key entities from 15+ quarterly earnings call transcripts, enhancing information retrieval and analysis.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 mt-2 gap-12">
+            <div class="w-full h-64 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" style="background-image: url('./images/p1.webp')">
+                <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 transform -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 gap-4"
+                style="background-color: rgba(255, 255, 255, 0.5); backdrop-filter: blur(3px)">
+                    <div>
+                        <h2 class="font-semibold dark:text-black">ChatBot</h2>
+                        <p class="text-xs md:text-sm text-gray-700">Designed an NLP pipeline to extract key entities from 15+ quarterly earnings call transcripts, enhancing information retrieval and analysis.</p>
+                    </div>
+                    
+                    <div>
+                        <a href="https://docs.google.com/presentation/d/1lhW6gwTsNcxY-ocYdaVPMFwzb6ex2YXiIzBWy3vVRng/edit?slide=id.g31ef0b9000d_0_47#slide=id.g31ef0b9000d_0_47" target="_blank" class="min-w-[40px] min-h-[40px] w-10 h-10 rounded-full border border-black flex items-center justify-center shadow-[2px_2px_0_#000] hover:bg-gray-300 transition shrink-0">
+                            <img src="./images/send.png" alt="Send Icon" class="w-3">
+                        </a>
+                    </div>
                 </div>
-                
-                <div>
-                    <a href="https://docs.google.com/presentation/d/1lhW6gwTsNcxY-ocYdaVPMFwzb6ex2YXiIzBWy3vVRng/edit?slide=id.g31ef0b9000d_0_47#slide=id.g31ef0b9000d_0_47" target="_blank" class="min-w-[40px] min-h-[40px] w-10 h-10 rounded-full border border-black flex items-center justify-center shadow-[2px_2px_0_#000] hover:bg-gray-300 transition shrink-0">
-                        <img src="./images/send.png" alt="Send Icon" class="w-3">
-                     </a>
+            </div>
+
+
+            <div class="w-full h-64 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" style="background-image: url('./images/p2.webp')">
+                <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 transform -translate-x-1/2 py-3 px-5 flex items-center justify-between gap-4 duration-500 group-hover:bottom-7"
+                style="background-color: rgba(255, 255, 255, 0.5); backdrop-filter: blur(3px)"> 
+                    <div>
+                        <h2 class="font-semibold dark:text-black">Height Calculation</h2>
+                        <p class="text-xs md:text-sm text-gray-700">Visualize and analyze the heights across multiple positions in 3D printing processes of SS316L STEEL using OpenCV and machine learning.</p>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/anu273/Height-Monitoring-in-SS316L-Steel-3D-Print-using-ML" target="_blank" class="min-w-[40px] min-h-[40px] w-10 h-10 rounded-full border border-black flex items-center justify-center shadow-[2px_2px_0_#000] hover:bg-gray-300 transition shrink-0">
+                            <img src="./images/send.png" alt="Send Icon" class="w-3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        
+            <div class="w-full h-64 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" style="background-image: url('./images/p3.webp')">
+                <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 transform -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 gap-4"
+                style="background-color: rgba(255, 255, 255, 0.5); backdrop-filter: blur(3px)">
+                    <div>
+                        <h2 class="font-semibold dark:text-black">Concall Sentiment Analysis</h2>
+                        <p class="text-xs md:text-sm text-gray-700">Applied NLTK, VADER, and AFINN for sentiment analysis after preprocessing text through cleaning, tokenization, and stopword removal.</p>
+                    </div>
+
+                    <div>
+                        <a href="https://drive.google.com/file/d/1-KBBbJR8uKTvDIrM56l4rUmcfjrpkIJR/view" target="_blank" class="min-w-[40px] min-h-[40px] w-10 h-10 rounded-full border border-black flex items-center justify-center shadow-[2px_2px_0_#000] hover:bg-gray-300 transition shrink-0">
+                            <img src="./images/send.png" alt="Send Icon" class="w-3">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-        <div class="w-full h-64 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" style="background-image: url('./images/p2.webp')">
-            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 transform -translate-x-1/2 py-3 px-5 flex items-center justify-between gap-4 duration-500 group-hover:bottom-7"
-            style="background-color: rgba(255, 255, 255, 0.5); backdrop-filter: blur(3px)"> 
-                <div>
-                    <h2 class="font-semibold dark:text-black">Height Calculation</h2>
-                    <p class="text-xs md:text-sm text-gray-700">Visualize and analyze the heights across multiple positions in 3D printing processes of SS316L STEEL using OpenCV and machine learning.</p>
-                </div>
-
-                <div>
-                    <a href="https://github.com/anu273/Height-Monitoring-in-SS316L-Steel-3D-Print-using-ML" target="_blank" class="min-w-[40px] min-h-[40px] w-10 h-10 rounded-full border border-black flex items-center justify-center shadow-[2px_2px_0_#000] hover:bg-gray-300 transition shrink-0">
-                        <img src="./images/send.png" alt="Send Icon" class="w-3">
-                     </a>
-                </div>
-            </div>
-        </div>
-
-
-    
-        <div class="w-full h-64 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" style="background-image: url('./images/p3.webp')">
-            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 transform -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7 gap-4"
-            style="background-color: rgba(255, 255, 255, 0.5); backdrop-filter: blur(3px)">
-                <div>
-                    <h2 class="font-semibold dark:text-black">Concall Sentiment Analysis</h2>
-                    <p class="text-xs md:text-sm text-gray-700">Applied NLTK, VADER, and AFINN for sentiment analysis after preprocessing text through cleaning, tokenization, and stopword removal.</p>
-                </div>
-
-                <div>
-                    <a href="https://drive.google.com/file/d/1-KBBbJR8uKTvDIrM56l4rUmcfjrpkIJR/view" target="_blank" class="min-w-[40px] min-h-[40px] w-10 h-10 rounded-full border border-black flex items-center justify-center shadow-[2px_2px_0_#000] hover:bg-gray-300 transition shrink-0">
-                        <img src="./images/send.png" alt="Send Icon" class="w-3">
-                     </a>
-                </div>
-            </div>
-        </div>
+        <a href="./Projects.html" class="w-max flex items-center justify-center gap-3 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-8 mx-auto my-6 hover:bg-gray-300 hover:shadow-black dark:bg-gray-300 font-semibold">Show more <img src="./images/arrow.png" alt="" class="w-5"></a>
+        <hr class="border-t-2 border-gray-400 mt-2 w-15/16 mx-auto"/>
     </div>
-    <a href="./Projects.html" class="w-max flex items-center justify-center gap-3 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-8 mx-auto my-6 hover:bg-gray-300 hover:shadow-black dark:bg-gray-300 font-semibold">Show more <img src="./images/arrow.png" alt="" class="w-5"></a>
-    <hr class="border-t-2 border-gray-400 mt-2 w-15/16 mx-auto"/>
-</div>
 
 
-<!-------- Contact ---------->
-<div class="w-full px-[12%] py-10 scroll-mt-20" id="contact">
-    <h2 class="text-center text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-serif">Get In Touch</h2>
-    <p class="text-center max-w-2xl mx-auto mt-5 mb-12"> I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
+    <!-------- Contact ---------->
+    <div class="w-full px-[12%] py-10 scroll-mt-20" id="contact">
+        <h2 class="text-center text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-serif">Get In Touch</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12"> I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
 
-    <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
-        <input type="hidden" name="access_key" value="aa6e857c-420a-42d9-b6ad-af7bc9009df5">
-        <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
-            <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bd-white dark:bg-darkHover/30 dark:border-white/90" required name="name">
+        <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+            <input type="hidden" name="access_key" value="aa6e857c-420a-42d9-b6ad-af7bc9009df5">
+            <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+                <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90" required name="name">
 
-            <input type="email" placeholder="Enter your email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bd-white dark:bg-darkHover/30 dark:border-white/90" required name="email">
-        </div>
-        <textarea rows="6" placeholder="Enter your message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90" required name="message"></textarea>
-        <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/40 transition-opacity text-white rounded-full mx-auto hover:bg-gray-800 duration-500 dark:bg-gray-700">Submit
-            <img src="" alt="">
-        </button>
-    </form>
-</div>
-
-<!--------Footer ---------->
-<div class="mt-20 -mb-2 bg-cover bg-center" style="background-image: url('./images/fbg.avif')">
-    <div class="text-center">
-        <div class="w-max flex items-center gap-4 mx-auto py-8">
-            <a href="mailto:anamika20073@gmail.com" class="text-white"><img src="./images/mail.png" alt="" class="w-10"></a>
-
-            <a href="https://www.linkedin.com/in/anamika-choudhary-3568b5229/" class="text-white"><img src="./images/linkedin.png" alt="" class="w-10"></a>
-
-            <a href="https://github.com/anu273" class="text-white"><img src="./images/github.png" alt="" class="w-10"></a>
-        </div>
-        <p class="text-white">&copy; Anamika Choudhary. All rights reserved.</p>
+                <input type="email" placeholder="Enter your email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-darkHover/30 dark:border-white/90" required name="email">
+            </div>
+            <textarea rows="6" placeholder="Enter your message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90" required name="message"></textarea>
+            <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/40 transition-opacity text-white rounded-full mx-auto hover:bg-gray-800 duration-500 dark:bg-gray-700">Submit
+                <img src="" alt="">
+            </button>
+        </form>
     </div>
-</div>
 
-<script src="./script.js"></script>
+    <!--------Footer ---------->
+    <footer class="relative w-full mt-10">
+        <!-- Light mode footer background -->
+        <div class="absolute inset-x-0 bottom-0 h-20 bg-footer-bg bg-cover bg-center bg-fixed dark:hidden z-[-1]"></div>
+        <!-- Dark mode footer background -->
+        <div class="absolute inset-x-0 bottom-0 h-20 bg-footer-bg-dark bg-cover bg-center bg-fixed hidden dark:block z-[-1]"></div>
+        <div class="text-center relative pt-4 pb-2">
+            <div class="w-max flex items-center gap-4 mx-auto py-2">
+                <a href="mailto:anamika20073@gmail.com" class="text-white"><img src="./images/mail.png" alt="" class="w-8"></a>
+                <a href="https://www.linkedin.com/in/anamika-choudhary-3568b5229/" class="text-white"><img src="./images/linkedin.png" alt="" class="w-8"></a>
+                <a href="https://github.com/anu273" class="text-white flex items-center">
+                    <img src="./images/github.png" alt="" class="w-8 hidden dark:block">
+                    <img src="./images/git-white.png" alt="" class="w-8 dark:hidden">
+                </a>
+            </div>
+            <p class="dark:text-white text-black text-sm">&copy; Anamika Choudhary. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
