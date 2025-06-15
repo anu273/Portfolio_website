@@ -31,10 +31,10 @@
 
       <!-- Center: Navigation Links -->
         <ul class="hidden md:flex items-center gap-6 lg:gap-8 px-12 py-3">
-            <li><a href="index.html" class="hover:text-fuchsia-600 font-md">Home</a></li>
+            <li><a href="./index.html" class="hover:text-fuchsia-600 font-md">Home</a></li>
             <li><a href="#about" class="hover:text-fuchsia-600 font-md font-bold">About</a></li>
-            <li><a href="Projects.html" class="hover:text-fuchsia-600 font-md">Projects</a></li>
-            <li><a href="#contact" class="hover:text-fuchsia-600 font-md">Contact</a></li>
+            <li><a href="./Projects.html" class="hover:text-fuchsia-600 font-md">Projects</a></li>
+            <li><a href="./Contact.html" class="hover:text-fuchsia-600 font-md">Contact</a></li>
         </ul>
 
       <!-- Search and Dark mode -->
@@ -70,13 +70,212 @@
                 <img src="./images/close-white.png" alt="" class="w-4 cursor-pointer hidden dark:block">
 
             </div>
-            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="./index.html" onclick="closeMenu()">Home</a></li>
             <li><a href="#about" onclick="closeMenu()">About me</a></li>
-            <li><a href="#work" onclick="closeMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+            <li><a href="./Projects.html" onclick="closeMenu()">Projects</a></li>
+            <li><a href="./Contact.html" onclick="closeMenu()">Contact me</a></li>
         </ul>
 
     </nav>
+
+    <!----------- About me ----------->
+    <div class="px-[12%] pt-24 bg-cover items-center justify-center gap-4 text-center" id="about">
+        <h2 class="mx-auto text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-serif text-left">Introduction</h2>
+        <hr class="border-t-2 border-gray-600 dark:border-gray-400 py-2 mb-4 w-11/12 mx-auto" />
+
+        <div class="flex flex-col sm:flex-row sm:items-center gap-8"> 
+            <!-- Image Section -->
+            <div class="w-full sm:w-1/3 flex justify-center sm:justify-start">
+                <img src="images/Intro.jpg" alt="" class="rounded-full object-cover w-40 h-40 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64">
+            </div>
+
+            <!-- Text Section -->
+            <div class="w-full sm:w-2/3">
+                <p class="text-center sm:text-left font-semibold font-mono text-2xl mt-6 sm:mt-0 text-fuchsia-600">Anamika Choudhary</p>
+                <p class="text-center sm:text-left font-semibold font-mono text-xl text-gray-600 dark:text-gray-400">B.Tech in Materials Science, IIT Jodhpur</p>
+                <p class="text-center sm:text-left text-gray-700 dark:text-gray-200 text-sm md:text-base mt-4">
+                    I am a recent graduate from the Indian Institute of Technology (IIT) Jodhpur, with a strong academic foundation and hands-on experience in machine learning and data analytics. I am actively seeking opportunities where I can apply my analytical skills, programming expertise, and passion for data-driven problem-solving to contribute meaningfully to innovative projects and business insights.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="px-[12%] pt-24 bg-cover items-center justify-center gap-4">
+        <h2 class="mx-auto text:left text-2xl lg:text-3xl font-serif text-center">Academic Life</h2>
+        <hr class="border-t-2 border-gray-400 dark:border-gray-800 py-2 w-11/12 mx-auto" />
+        <div class="mx-auto text-center text-sm md:text-base">
+            My academic journey has been marked by a strong focus on data science, machine learning, and financial analytics, equipping me with the skills necessary to tackle complex problems in these domains. I have consistently maintained a solid academic record, achieving a CGPA of <b>6.86</b> during my undergraduate studies.
+        </div>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+            <!-- Academics Overview -->
+            <div class="bg-white/70 dark:bg-gray-900/70 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+                <h3 class="text-xl font-bold text-gray-800 dark:text-purple-300 mb-2">Academic Foundation</h3>
+                <ul class="list-disc list-inside text-gray-700 dark:text-gray-200 space-y-2">
+                <li>
+                    <span class="font-semibold">Core Sciences:</span> Mathematics I & II, Electromagnetism & Optics, Chemistry, Physics Laboratory.
+                </li>
+                <li>
+                    <span class="font-semibold">Engineering Principles:</span> Introduction to Electrical Engineering, Engineering Mechanics.
+                </li>
+                <li>
+                    <span class="font-semibold">Computational Skills:</span> Introduction to Computer Science, Scientific Computations, Data Structures & Algorithms, Python Programming, Machine Learning.
+                </li>
+                </ul>
+            </div>
+            <!-- Materials Engineering -->
+            <div class="bg-white/70 dark:bg-gray-900/70 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+                <h3 class="text-xl font-bold text-gray-800 dark:text-purple-300 mb-2">Materials Engineering</h3>
+                <ul class="list-disc list-inside text-gray-700 dark:text-gray-200 space-y-2">
+                <li>
+                    <span class="font-semibold">Core Subjects:</span> Mechanics of Solids, Thermodynamics, Physical Metallurgy, Mechanical Behavior, Electronic Materials, Corrosion.
+                </li>
+                <li>
+                    <span class="font-semibold">Advanced Topics:</span> Computational Modelling, Smart Materials, Energy Materials, Casting & Solidification, Metallurgy of Joining, Extraction of Non-Ferrous Metals.
+                </li>
+                <li>
+                    <span class="font-semibold">Final Semester:</span> Processing-Microstructure-Properties of Steels, High Temperature Materials.
+                </li>
+                </ul>
+            </div>
+            <!-- Interdisciplinary & Electives -->
+            <div class="bg-white/70 dark:bg-gray-900/70 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+                <h3 class="text-xl font-bold text-gray-800 dark:text-purple-300 mb-2">Interdisciplinary Learning</h3>
+                <ul class="list-disc list-inside text-gray-700 dark:text-gray-200 space-y-2">
+                <li>
+                    <span class="font-semibold">Data Science & Finance:</span> Machine Learning for Economics, AI for FinTech, Financial Analytics, ML for Materials Design.
+                </li>
+                <li>
+                    <span class="font-semibold">Electives:</span> Environmental Science, Digital Societies, Basics of Leadership, Introduction to Theatre.
+                </li>
+                </ul>
+            </div>
+            <!-- Labs & Projects -->
+            <div class="bg-white/70 dark:bg-gray-900/70 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700">
+                <h3 class="text-xl font-bold text-gray-800 dark:text-purple-300 mb-2">Labs & Projects</h3>
+                <ul class="list-disc list-inside text-gray-700 dark:text-gray-200 space-y-2">
+                <li>
+                    <span class="font-semibold">Core Labs:</span> Energy Materials, Physical Metallurgy, Materials Characterization, Electronic Materials, Processing & Manufacturing.
+                </li>
+                <li>
+                    <span class="font-semibold">Computational Lab:</span> Modelling of Materials, hands-on simulations.
+                </li>
+                <li>
+                    <span class="font-semibold">B.Tech Project:</span> Applied machine learning techniques to address real-world challenges in materials science, integrating data-driven research with practical problem-solving.
+                </li>
+                </ul>
+            </div>
+            </div>
+
+            <!-- Project Highlight -->
+            <div class="mt-8 bg-gradient-to-r from-fuchsia-100 via-white to-fuchsia-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 rounded-xl shadow-lg p-6 border border-fuchsia-200 dark:border-fuchsia-800">
+            <h3 class="text-lg font-bold text-gray-800 dark:text-purple-300 mb-2 flex items-center">
+                <img src="./images/quantum.png" alt="Quantum ESPRESSO" class="w-6 h-6 mr-2 inline-block" />
+                Computational First-principles Calculation Project
+            </h3>
+            <p class="text-gray-700 dark:text-gray-200">
+                During the summer, I worked on a comprehensive project using <span class="font-semibold">Quantum ESPRESSO</span> and <span class="font-semibold">VESTA</span> for first-principles simulations. I constructed crystal structures, created alloys and supercells, and calculated properties like bulk modulus, band structure, and density of states for materials such as Silicon and Nickel.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-200 mt-2 space-y-1">
+                <li>Crystal symmetry analysis & electronic property calculations</li>
+                <li>Hands-on experience with computational tools for materials research</li>
+                <li>Enhanced understanding of first-principles methods in real-world applications</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="px-[12%] pt-24 bg-cover items-center justify-center gap-4">
+            <h2 class="mx-auto text:left text-2xl lg:text-3xl font-serif text-center">Beyond Work</h2>
+            <hr class="border-t-2 border-gray-400 dark:border-gray-800 py-2 w-11/12 mx-auto" />
+            <div class="mx-auto text-center text-sm md:text-base">
+                Beyond my academic and professional pursuits, I have actively engaged in extracurricular activities that highlight my leadership, teamwork, creative abilities and personal growth. 
+            </div>
+            <!-- Dance Society Section -->
+            <div class="mb-8 mt-4 text-left">
+                <p class="font-semibold text-lg text-gray-800 dark:text-purple-300 italic">
+                    Mentor and Core Team Member, The Groove Theory (TGT), Dance Society, IIT Jodhpur
+                </p>
+                <p>
+                    Being part of The Groove Theory, IIT Jodhpur’s official dance society, has been one of the most rewarding experiences of my college life. As a mentor and core team member, I’ve had the chance to choreograph performances, lead workshops for new members, and help fellow dancers grow in confidence and skill. Our practices are always filled with energy, creativity, and a strong sense of teamwork.
+                </p>
+                Together, we’ve celebrated some amazing achievements—like winning 8th position at the Inter-IIT Cultural Meet 5.0 and 6th position at the Inter-IIT Cultural Meet 6.0.
+                <img src="./images/youtube-icon.png" alt="YouTube" class="inline w-5 h-5 align-middle ml-2" />
+                <a href="https://www.youtube.com/watch?v=wJE0xJtrfpA&t=59s&ab_channel=TheGrooveTheory%2CDanceSocietyIITJ" target="_blank" title="Watch Inter IIT 5.0"
+                    class="text-fuchsia-600 underline hover:text-fuchsia-800 transition-colors text-xs sm:text-sm md:text-base align-middle ml-1">Inter IIT 5.0</a>
+                <span class="mx-1">|</span>
+                <a href="https://www.youtube.com/watch?v=JBJDjwYvuHk&t=372s&ab_channel=TheGrooveTheory%2CDanceSocietyIITJ" target="_blank" title="Watch Inter IIT 6.0"
+                    class="text-fuchsia-600 underline hover:text-fuchsia-800 transition-colors text-xs sm:text-sm md:text-base align-middle">Inter IIT 6.0</a>
+                </p>
+                <br>
+                These results came from countless hours of planning, rehearsing, and supporting each other. We’ve also performed at major campus events such as Spectrum, Ignus, and Aura, which have helped us build a close-knit and enthusiastic dance community.
+                    One of my proudest moments was when our team was selected for the Indian Hip Hop Dance Championship (HHI) during the Ignus festival organized by IIT Jodhpur.
+                </p>
+                <p>
+                    My journey with TGT has not only improved my dancing but also taught me valuable lessons in leadership, collaboration, and the importance of perseverance. I’ve learned how to work effectively in a team, manage time during busy schedules, and express myself creatively through dance.
+                </p>
+                
+                <!--<p class="mt-2">
+                    View
+                    <a href="https://drive.google.com/drive/folders/YOUR_IMAGE_FOLDER_ID" target="_blank" class="text-fuchsia-600 underline hover:text-fuchsia-800 transition-colors">photo gallery</a>.
+                </p>-->
+            </div>
+
+            <!-- Udbhaas Exhibition Section -->
+            <div class="mb-8 text-left">
+                <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+                    <!-- Text Section -->
+                    <div class="flex-1">
+                        <p class="font-semibold text-lg text-gray-800 dark:text-purple-300 italic">
+                            Assistant Head and Coordinator, Udbhaas-2022 Exhibition, IIT Jodhpur (November 2022)
+                        </p>
+                        <p>
+                            The event <b class="text-gray-500 dark:text-white">Udbhaas - Jal Aur Jeevan</b> organised by JCKIF. As the Assistant Head and Coordinator for Udbhaas 2022, I helped organize one of IIT Jodhpur’s biggest art exhibitions. My job was to give suggestions, organize things and make sure everything ran smoothly. I worked with a great team to solve problems, manage resources, and keep everyone informed.
+                        </p>
+                        <p>
+                            The exhibition was a big success and drew a lot of attention from both the campus and the wider community. We were honored when the Hon’ble Union Minister Shri Gajendra Singh Shekhawat praised our efforts and the impact of the event. This recognition meant a lot to us and showed how well our team worked together.
+                        </p>
+                    </div>
+                    <!-- Certificate Image Section -->
+                    <div class="w-full md:w-56 flex-shrink-0 flex justify-center md:justify-end mt-4 md:mt-0">
+                        <a href="https://drive.google.com/file/d/1UHx5QCCSe36G0IwAnqmJUesZUDG05YWf/view" target="_blank" title="Open Certificate">
+                            <img src="./images/certificate.jpg" alt="Udbhaas Certificate" class="rounded shadow-lg max-w-xs w-full h-auto border border-gray-300 dark:border-gray-700">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Volunteer Section -->
+            <div class="mb-8 text-left">
+                <p class="font-semibold text-lg text-gray-800 dark:text-purple-300 italic">Volunteer and Assistant Head in various fests and events</p>
+                <p>
+                    I have taken on the role of Assistant Head in the Youth Conclave Fest at IIT Jodhpur, where I helped plan and organize various activities. I have also volunteered in several other campus events, including Aftaab (the annual cultural fest), Varchas (the sports fest), and celebrations like Garba Night. In these roles, I organized the event and assigned specific tasks to team members based on their strengths and interests, ensuring that responsibilities such as logistics, publicity, and coordination were managed efficiently. I also gave suggestions to improve the workflow and fostered a collaborative environment, which contributed to the overall success of the events.
+                <p>
+                    Being involved in these events allowed me to meet and work with people from different backgrounds, improve my communication and teamwork skills, and understand the importance of collaboration. These experiences have inspired me to keep contributing to campus life and to support activities that bring people together and create a positive environment.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--------Footer ---------->
+    <footer class="relative w-full mt-10">
+        <!-- Light mode footer background -->
+        <div class="absolute inset-x-0 bottom-0 h-20 bg-footer-bg bg-cover bg-center bg-fixed dark:hidden z-[-1]"></div>
+        <!-- Dark mode footer background -->
+        <div class="absolute inset-x-0 bottom-0 h-20 bg-footer-bg-dark bg-cover bg-center bg-fixed hidden dark:block z-[-1]"></div>
+        <div class="text-center relative pt-4 pb-2">
+            <div class="w-max flex items-center gap-4 mx-auto py-2">
+                <a href="mailto:anamika20073@gmail.com" class="text-white"><img src="./images/mail.png" alt="" class="w-8"></a>
+                <a href="https://www.linkedin.com/in/anamika-choudhary-3568b5229/" class="text-white"><img src="./images/linkedin.png" alt="" class="w-8"></a>
+                <a href="https://github.com/anu273" class="text-white flex items-center">
+                    <img src="./images/github.png" alt="" class="w-8 hidden dark:block">
+                    <img src="./images/git-white.png" alt="" class="w-8 dark:hidden">
+                </a>
+            </div>
+            <p class="dark:text-white text-black text-sm">&copy; Anamika Choudhary. All rights reserved.</p>
+        </div>
+    </footer>
 <script src="./script.js"></script>
 </body>
 </html>
