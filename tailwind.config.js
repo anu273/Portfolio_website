@@ -20,7 +20,9 @@ tailwind.config = {
             backgroundImage: {
                 'light-bg': "url('images/bg2.avif')",
                 'dark-bg': "url('images/dark_bg.avif')",
-                'side-bg': "url('images/bg2.avif')"
+                'side-bg': "url('images/bg2.avif')",
+                'footer-bg': "url('./images/fbg-white.jpg')",
+                'footer-bg-dark': "url('./images/fbg.avif')"
             }
         }
     },
