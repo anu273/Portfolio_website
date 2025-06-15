@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
     
+    
 </head>
 
 <body class="overflow-x-hidden bg-center bg-cover text-black dark:text-white transition-colors duration-500">
@@ -34,7 +35,7 @@
             <li><a href="index.html" class="hover:text-fuchsia-600 font-md">Home</a></li>
             <li><a href="About.html" class="hover:text-fuchsia-600 font-md">About</a></li>
             <li><a href="#projects" class="hover:text-fuchsia-600 font-md font-bold">Projects</a></li>
-            <li><a href="#contact" class="hover:text-fuchsia-600 font-md">Contact</a></li>
+            <li><a href="./Contact.html" class="hover:text-fuchsia-600 font-md">Contact</a></li>
         </ul>
 
       <!-- Search and Dark mode -->
@@ -70,13 +71,102 @@
                 <img src="./images/close-white.png" alt="" class="w-4 cursor-pointer hidden dark:block">
 
             </div>
-            <li><a href="#top" onclick="closeMenu()">Home</a></li>
-            <li><a href="#about" onclick="closeMenu()">About me</a></li>
+            <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+            <li><a href="About.html" onclick="closeMenu()">About me</a></li>
             <li><a href="#work" onclick="closeMenu()">Projects</a></li>
             <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
         </ul>
 
     </nav>
-<script src="./script.js"></script>
+
+
+    <!--------- Projects ----------->
+    <div class="px-[12%] pt-24 bg-cover items-center justify-center gap-4 text-center" id="work">
+        <h2 class="mx-auto text-center text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-serif">My Projects</h2>
+        <p class="mt-3 max-w-[46rem] mx-auto text-sm md:text-lg leading-relaxed text-center font-sans font-light italic">
+            "some of the projects I've worked on that highlight the skills I've learned, the tools I've used, and how I solve real problems through creative and practical solutions."
+        </p>
+
+        <h4 class="mt-8 font-serif font-semibold text-left text-xl lg:text-2xl">Academic Projects</h4>
+        <hr class="border-t-2 border-gray-400 py-2 w-15/16 mx-auto"/>
+
+        <div class="grid gap-10 mt-8">
+            <!-- Project Card -->
+            <div class="bg-white/70 dark:bg-gray-800/70 rounded-xl shadow-lg flex flex-col md:flex-row items-center p-4 md:p-6 hover:scale-[1.025] transition-transform duration-300 group">
+                <img src="images/P1.jpg" alt="" class="rounded-lg w-full md:w-56 lg:w-64 xl:w-72 h-40 md:h-48 lg:h-56 xl:h-64 object-cover mb-4 md:mb-0 md:mr-6">
+                <div class="flex-1 text-left">
+                    <h2 class="font-semibold dark:text-fuchsia-300 text-xl md:text-2xl mb-2">ChatBot</h2>
+                    <p class="text-gray-700 dark:text-gray-200 text-sm md:text-base">Developed an  AI Chatbot for Financial Analysis, offering financial information through PDF document analysis and live stock market data. It uses the <b>llama3.2</b> model for language understanding via OllamaLLM, PyPDF2 for PDF processing, <b>FAISS</b> for document search, and integrates with <b>Finnhub API and yfinance</b> for real-time and historical stock data. This allows the chatbot to cross-reference static reports with dynamic market trends, providing comprehensive financial analysis.</p>
+                    <a href="" class="inline-block mt-3 px-4 py-1 bg-gray-400 text-gray-800 rounded-2xl shadow text-sm hover:bg-gray-200 transition">GitHub Link</a>
+                </div>
+            </div>
+
+            <div class="bg-white/70 dark:bg-gray-800/70 rounded-xl shadow-lg flex flex-col md:flex-row items-center p-4 md:p-6 hover:scale-[1.025] transition-transform duration-300 group">
+                <img src="images/P2.jpg" alt="" class="rounded-lg w-full md:w-56 lg:w-64 xl:w-72 h-40 md:h-48 lg:h-56 xl:h-64 object-cover mb-4 md:mb-0 md:mr-6">
+                <div class="flex-1 text-left">
+                    <h2 class="font-semibold dark:text-fuchsia-300 text-xl md:text-2xl mb-2">Concall Sentiment Analysis</h2>
+                    <p class="text-gray-700 dark:text-gray-200 text-sm md:text-base">Applied <b>Natural Language Processing (NLP)</b> to analyze quarterly earnings call transcripts of Neuland Laboratories, a pharmaceutical company. Extracted sentiment and other textual features from these calls and investigate their potential correlation with stock price movements. Utilized libraries like <b>vaderSentiment, afinn, PyPDF2, and nltk</b> for sentiment analysis and text processing. Loading metadata and stock prices from an Excel file, then extracting text content, page counts, and word counts from PDF transcripts using <b>PyPDF2</b>. Performed sentiment scoring using <b>VADER</b> to quantify the emotional tone. Uncovering hidden patterns and contributing to data-driven financial analysis.</p>
+                    <div class="flex gap-2 mt-3">
+                        <a href="https://drive.google.com/file/d/1-KBBbJR8uKTvDIrM56l4rUmcfjrpkIJR/view" class="px-4 py-1 bg-gray-400 text-gray-800 rounded-2xl shadow text-sm hover:bg-gray-200 transition">Dashboard</a>
+                        <a href="Files/NLP_Concall_Sentiment.ipynb" class="px-4 py-1 bg-gray-400 text-gray-800 rounded-2xl shadow text-sm hover:bg-gray-200 transition">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white/70 dark:bg-gray-800/70 rounded-xl shadow-lg flex flex-col md:flex-row items-center p-4 md:p-6 hover:scale-[1.025] transition-transform duration-300 group">
+                <img src="images/P3.png" alt="" class="rounded-lg w-full md:w-56 lg:w-64 xl:w-72 h-40 md:h-48 lg:h-56 xl:h-64 object-cover mb-4 md:mb-0 md:mr-6">
+                <div class="flex-1 text-left">
+                    <h2 class="font-semibold dark:text-fuchsia-300 text-xl md:text-2xl mb-2">Height Calculation</h2>
+                    <p class="text-gray-700 dark:text-gray-200 text-sm md:text-base">A <b>CCD camera</b> was employed to capture in-situ images during the printing process. Images captured are processed using <b>OpenCV</b> to detect and extract the printed metal region via color masks in <b>grayscale</b>, <b>RGB</b>, and <b>LAB</b> color spaces. Height is estimated by counting pixels along user-defined vertical lines and converting them to physical measurements. The analysis helps monitor layer-wise growth and maintain the optimal nozzle-to-substrate distance. Python libraries like <b>OpenCV</b>, <b>NumPy</b>, and <b>Matplotlib</b> were used for image processing and visualization, and CSV files are generated for further analysis.</p>
+                    <a href="https://github.com/anu273/Height-Monitoring-in-SS316L-Steel-3D-Print-using-ML" class="inline-block mt-3 px-4 py-1 bg-gray-400 text-gray-800 rounded-2xl shadow text-sm hover:bg-gray-200 transition">GitHub Link</a>
+                </div>
+            </div>
+
+            <div class="bg-white/70 dark:bg-gray-800/70 rounded-xl shadow-lg flex flex-col md:flex-row items-center p-4 md:p-6 hover:scale-[1.025] transition-transform duration-300 group">
+                <img src="images/P4.jpg" alt="" class="rounded-lg w-full md:w-56 lg:w-64 xl:w-72 h-40 md:h-48 lg:h-56 xl:h-64 object-cover mb-4 md:mb-0 md:mr-6">
+                <div class="flex-1 text-left">
+                    <h2 class="font-semibold dark:text-fuchsia-300 text-xl md:text-2xl mb-2">BandGap Prediction</h2>
+                    <p class="text-gray-700 dark:text-gray-200 text-sm md:text-base">Predicted the band gap of perovskite materials through Ml model, providing a faster alternative to computationally expensive <b>Density Functional Theory (DFT)</b> calculations. Using data from the Materials Project and tools like <b>PyMatGen</b>, we built a dataset of stoichiometric perovskites (ABX₃) and extracted both compositional and structural descriptors. Band gaps were predicted using <b>XgBoost</b> and <b>regression models</b> (e.g., Extra Trees Regressor with R² ≈ 0.78). The project demonstrated how ML can support high-throughput screening of novel materials for electronic and energy applications.</p>
+                    <a href="https://github.com/anu273/BandGap-Prediction" class="inline-block mt-3 px-4 py-1 bg-gray-400 text-gray-800 rounded-2xl shadow text-sm hover:bg-gray-200 transition">GitHub Link</a>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="mt-12 font-serif font-semibold text-left text-xl lg:text-2xl">Self &nbsp;Projects</h4>
+        <hr class="border-t-2 border-gray-400 py-2 w-15/16 mx-auto"/>
+
+        <div class="grid gap-8 mt-6">
+            <div class="bg-white/70 dark:bg-gray-800/70 rounded-xl shadow-lg flex flex-col md:flex-row items-center p-4 md:p-6 hover:scale-[1.025] transition-transform duration-300 group">
+                <img src="images/S1.jpg" alt="" class="rounded-lg w-full md:w-56 lg:w-64 xl:w-72 h-40 md:h-48 lg:h-56 xl:h-64 object-cover mb-4 md:mb-0 md:mr-6">
+                <div class="flex-1 text-left">
+                    <h2 class="font-semibold dark:text-fuchsia-300 text-xl md:text-2xl mb-2">Pizza Sales Analysis</h2>
+                    <p class="text-gray-700 dark:text-gray-200 text-sm md:text-base">Leveraged <b>SQL</b> for data extraction and transformation, and <b>Power BI</b> for dynamic visualization to analyze a full year (2015) of pizza sales data. I created interactive dashboards that highlighted key business insights, including total revenue (~$818K), average order value, and sales trends by day, month, pizza category, and size. The analysis identified that classic pizzas and large sizes were the most popular, with peak orders occurring on weekends. Additionally, ranked best and worst-selling pizzas by revenue, quantity, and order frequency, enabling strategic decisions for product optimization.</p>
+                    <a href="./Files/Pizza_Sales.pdf" class="inline-block mt-3 px-4 py-1 bg-gray-400 text-gray-800 rounded-2xl shadow text-sm hover:bg-gray-200 transition">Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------Footer ---------->
+    <footer class="relative w-full mt-10">
+        <!-- Light mode footer background -->
+        <div class="absolute inset-x-0 bottom-0 h-20 bg-footer-bg bg-cover bg-center bg-fixed dark:hidden z-[-1]"></div>
+        <!-- Dark mode footer background -->
+        <div class="absolute inset-x-0 bottom-0 h-20 bg-footer-bg-dark bg-cover bg-center bg-fixed hidden dark:block z-[-1]"></div>
+        <div class="text-center relative pt-4 pb-2">
+            <div class="w-max flex items-center gap-4 mx-auto py-2">
+                <a href="mailto:anamika20073@gmail.com" class="text-white"><img src="./images/mail.png" alt="" class="w-8"></a>
+                <a href="https://www.linkedin.com/in/anamika-choudhary-3568b5229/" class="text-white"><img src="./images/linkedin.png" alt="" class="w-8"></a>
+                <a href="https://github.com/anu273" class="text-white flex items-center">
+                    <img src="./images/github.png" alt="" class="w-8 hidden dark:block">
+                    <img src="./images/git-white.png" alt="" class="w-8 dark:hidden">
+                </a>
+            </div>
+            <p class="dark:text-white text-black text-sm">&copy; Anamika Choudhary. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
