@@ -48,15 +48,60 @@
             <!-- Search box -->
             <div class="relative w-28 sm:w-40">
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <img src="./images/search.jpg" alt="Search" class="w-4 h-4" />
+                    <img src="./images/search.jpg" alt="Search" class="w-4 h-4" />
                 </div>
-
                 <input
-                type="text"
-                placeholder="Search..."
-                class="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    id="searchBox"
+                    type="text"
+                    placeholder="Search..."
+                    class="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 text-black dark:text-black"
+                    oninput="highlightSearch(this.value)"
                 />
             </div>
+            <script>
+                function highlightSearch(query) {
+                    // Remove previous highlights
+                    document.querySelectorAll('.search-highlight').forEach(el => {
+                        el.outerHTML = el.innerText;
+                    });
+                    if (!query) return;
+
+                    // Elements to search in
+                    const walker = document.createTreeWalker(
+                        document.body,
+                        NodeFilter.SHOW_TEXT,
+                        {
+                            acceptNode: function(node) {
+                                if (
+                                    node.parentNode.closest('nav, footer, #sideMenu, script, style') ||
+                                    !node.nodeValue.trim()
+                                ) return NodeFilter.FILTER_REJECT;
+                                return NodeFilter.FILTER_ACCEPT;
+                            }
+                        }
+                    );
+                    let node;
+                    const regex = new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+                    let firstMark = null;
+                    while ((node = walker.nextNode())) {
+                        if (regex.test(node.nodeValue)) {
+                            const span = document.createElement('span');
+                            // Add dark:class for dark mode text-black
+                            span.innerHTML = node.nodeValue.replace(regex, match =>
+                                `<mark class="search-highlight bg-yellow-300 text-black rounded dark:text-black">${match}</mark>`
+                            );
+                            node.parentNode.replaceChild(span, node);
+                            if (!firstMark) {
+                                firstMark = span.querySelector('.search-highlight');
+                            }
+                        }
+                    }
+                    // Scroll to first match
+                    if (firstMark) {
+                        firstMark.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }
+                }
+            </script>
 
             <button class="block md:hidden ml-3" onclick="openMenu()">
                 <img src="./images/menu.jpg" alt="" class="w-6">
@@ -210,7 +255,7 @@
     <!--------Footer ---------->
     <footer class="relative w-full mt-10">
         <!-- Light mode footer background -->
-        <div class="absolute inset-x-0 bottom-0 h-20 bg-footer-bg bg-cover bg-center bg-fixed dark:hidden z-[-1]"></div>
+        <div class="absolute inset-x-0 bottom-0 w-full h-20 bg-white bg-opacity-30 dark:hidden z-[-1]" style="backdrop-filter: blur(3px);"></div>
         <!-- Dark mode footer background -->
         <div class="absolute inset-x-0 bottom-0 h-20 bg-footer-bg-dark bg-cover bg-center bg-fixed hidden dark:block z-[-1]"></div>
         <div class="text-center relative pt-4 pb-2">
